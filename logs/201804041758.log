@@ -1,0 +1,14 @@
+2018-04-04 17:58:43,358-'test'-INFO-now test case1
+2018-04-04 17:58:43,378-'test'-INFO-(<class 'KeyError'>, KeyError('Status'), <traceback object at 0x0000000002D56648>)
+2018-04-04 17:58:43,378-'test'-INFO-now test case2
+2018-04-04 17:58:43,388-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D4C208>)
+2018-04-04 17:58:43,388-'test'-INFO-now test case3
+2018-04-04 17:58:43,398-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D6F8C8>)
+2018-04-04 17:58:43,398-'test'-INFO-now test case4
+2018-04-04 17:58:43,408-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D56B48>)
+2018-04-04 17:58:43,408-'test'-INFO-now test case5
+2018-04-04 17:58:43,418-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D56D08>)
+2018-04-04 17:58:43,418-'test'-INFO-now test case6
+2018-04-04 17:58:43,428-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D56648>)
+2018-04-04 17:58:43,428-'test'-INFO-now test case7
+2018-04-04 17:58:43,428-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D56E88>)

@@ -1,0 +1,29 @@
+2018-04-04 18:21:15,713-'test'-INFO-now test case1
+2018-04-04 18:21:15,742-'test'-INFO-now test post {"_dc": "1522767236167"}
+2018-04-04 18:21:15,742-'test'-INFO-{'root': [{'year': 2013, 'author': '赵卓', 'digest': 'Selenium是ThoughtWorks公司开发的Web自动化测试工具。Selenium可以直接在浏览器中运行，支持Windows、Linux和Macintosh平台上的Internet Explorer、Mozilla和Firefox等浏览器，得到了广大Web开发和测试人员的应用。 ', 'name': 'Selenium自动化测试指南', 'id': 5}, {'year': 2016, 'author': '詹姆斯·特恩布尔（James Turnbull）', 'digest': 'Docker是一个开源的应用容器引擎，开发者可以利用Docker打包自己的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化。', 'name': '第一本Docker书 修订版', 'id': 4}, {'year': 2011, 'author': '许晓斌', 'digest': '本书是国内第一本公开出版的Maven专著。它内容新颖，基于*发布的Maven 3.0，不仅详尽讲解了Maven 3.0的所有新功能和新特性。', 'name': 'Maven实战', 'id': 3}, {'year': 2016, 'author': 'Craig Walls 沃尔斯', 'digest': '《Spring实战（第4版）》是经典的、畅销的Spring学习和实践指南。 第4版针对Spring 4进行了全面更新。', 'name': 'Spring实战（第4版）', 'id': 2}, {'year': 2016, 'author': '汪云飞', 'digest': '在当今Java EE 开发中，Spring 框架是当之无愧的王者。而Spring Boot 是Spring 主推的基于“习惯优于配置”的原则，让你能够快速搭建应用的框架，从而使得Java EE 开发变得异常简单。', 'name': 'JavaEE开发的颠覆者: Spring Boot实战', 'id': 1}], 'totalProperty': 5}
+2018-04-04 18:21:15,743-'test'-INFO-testreport is:{'case_id': '1-001', 't_name': 'getbooklistsuccess', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/getBookList', 'parama': {'_dc': '1522767236167'}, 'hope_result': {'totalProperty': 5}, 'actual_result': ['totalProperty:5'], 'test_result': 'PASS'}
+2018-04-04 18:21:15,743-'test'-INFO-当前执行用例：case1____用例执行时间：0.03000164031982422s
+2018-04-04 18:21:15,743-'test'-INFO-now test case2
+2018-04-04 18:21:15,756-'test'-INFO-now test post {"bookValues": {"id": "660", "name": "2", "author": "2", "year": "222", "digest": "222"}}
+2018-04-04 18:21:15,757-'test'-INFO-{'timestamp': 1522837275753, 'status': 500, 'error': 'Internal Server Error', 'exception': 'java.lang.NullPointerException', 'message': 'No message available', 'path': '/test/book/addBook'}
+2018-04-04 18:21:15,757-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D3BD48>)
+2018-04-04 18:21:15,757-'test'-INFO-now test case3
+2018-04-04 18:21:15,770-'test'-INFO-now test post {"id": "660", "name": "2", "author": "2", "year": "222", "digest": "222"}
+2018-04-04 18:21:15,771-'test'-INFO-{'timestamp': 1522837275766, 'status': 500, 'error': 'Internal Server Error', 'exception': 'java.lang.NullPointerException', 'message': 'No message available', 'path': '/test/book/addBook'}
+2018-04-04 18:21:15,771-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D3BDC8>)
+2018-04-04 18:21:15,771-'test'-INFO-now test case4
+2018-04-04 18:21:15,785-'test'-INFO-now test post {"id": "660", "name": "200000", "author": "2", "year": "222", "digest": "222"}
+2018-04-04 18:21:15,785-'test'-INFO-{'timestamp': 1522837275781, 'status': 500, 'error': 'Internal Server Error', 'exception': 'java.lang.NullPointerException', 'message': 'No message available', 'path': '/test/book/updateBook'}
+2018-04-04 18:21:15,785-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D3B8C8>)
+2018-04-04 18:21:15,785-'test'-INFO-now test case5
+2018-04-04 18:21:15,797-'test'-INFO-now test post {"id": "660", "name": "2", "author": "2", "year": "222", "digest": "222"}
+2018-04-04 18:21:15,798-'test'-INFO-{'timestamp': 1522837275794, 'status': 500, 'error': 'Internal Server Error', 'exception': 'java.lang.NullPointerException', 'message': 'No message available', 'path': '/test/book/updateBook'}
+2018-04-04 18:21:15,798-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D2C408>)
+2018-04-04 18:21:15,798-'test'-INFO-now test case6
+2018-04-04 18:21:15,811-'test'-INFO-now test post {"id": "660"}
+2018-04-04 18:21:15,811-'test'-INFO-{'timestamp': 1522837275807, 'status': 500, 'error': 'Internal Server Error', 'exception': 'java.lang.NullPointerException', 'message': 'No message available', 'path': '/test/book/deleteBook'}
+2018-04-04 18:21:15,812-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D2C2C8>)
+2018-04-04 18:21:15,812-'test'-INFO-now test case7
+2018-04-04 18:21:15,824-'test'-INFO-now test post {"id": "800"}
+2018-04-04 18:21:15,824-'test'-INFO-{'timestamp': 1522837275820, 'status': 500, 'error': 'Internal Server Error', 'exception': 'java.lang.NullPointerException', 'message': 'No message available', 'path': '/test/book/deleteBook'}
+2018-04-04 18:21:15,825-'test'-INFO-(<class 'KeyError'>, KeyError('errorNo'), <traceback object at 0x0000000002D3BDC8>)

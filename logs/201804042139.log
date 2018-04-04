@@ -1,0 +1,180 @@
+2018-04-04 21:39:03,453-'test'-INFO-now test case1
+2018-04-04 21:39:03,893-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/getBookList
+2018-04-04 21:39:03,893-'test'-INFO-now test post {'_dc': '1522767236167'}
+2018-04-04 21:39:03,893-'test'-INFO-{'root': [{'year': 2013, 'author': '赵卓', 'digest': 'Selenium是ThoughtWorks公司开发的Web自动化测试工具。Selenium可以直接在浏览器中运行，支持Windows、Linux和Macintosh平台上的Internet Explorer、Mozilla和Firefox等浏览器，得到了广大Web开发和测试人员的应用。 ', 'name': 'Selenium自动化测试指南', 'id': 5}, {'year': 2016, 'author': '詹姆斯·特恩布尔（James Turnbull）', 'digest': 'Docker是一个开源的应用容器引擎，开发者可以利用Docker打包自己的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化。', 'name': '第一本Docker书 修订版', 'id': 4}, {'year': 2011, 'author': '许晓斌', 'digest': '本书是国内第一本公开出版的Maven专著。它内容新颖，基于*发布的Maven 3.0，不仅详尽讲解了Maven 3.0的所有新功能和新特性。', 'name': 'Maven实战', 'id': 3}, {'year': 2016, 'author': 'Craig Walls 沃尔斯', 'digest': '《Spring实战（第4版）》是经典的、畅销的Spring学习和实践指南。 第4版针对Spring 4进行了全面更新。', 'name': 'Spring实战（第4版）', 'id': 2}, {'year': 2016, 'author': '汪云飞', 'digest': '在当今Java EE 开发中，Spring 框架是当之无愧的王者。而Spring Boot 是Spring 主推的基于“习惯优于配置”的原则，让你能够快速搭建应用的框架，从而使得Java EE 开发变得异常简单。', 'name': 'JavaEE开发的颠覆者: Spring Boot实战', 'id': 1}], 'totalProperty': 5}
+2018-04-04 21:39:03,903-'test'-INFO-testreport is:{'case_id': '1-001', 't_name': 'getbooklistsuccess', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/getBookList', 'parama': {'_dc': '1522767236167'}, 'hope_result': {'totalProperty': 5}, 'actual_result': ['totalProperty:5'], 'test_result': 'PASS'}
+2018-04-04 21:39:03,903-'test'-INFO-当前执行用例：case1____用例执行时间：0.44997239112854004s
+2018-04-04 21:39:03,903-'test'-INFO-now test case2
+2018-04-04 21:39:03,943-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/addBook
+2018-04-04 21:39:03,943-'test'-INFO-now test post {'bookValues': '{"id": "660", "name": "2", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:03,943-'test'-INFO-{'errorNo': '0', 'success': True, 'errorInfo': ''}
+2018-04-04 21:39:03,943-'test'-INFO-testreport is:{'case_id': '1-002', 't_name': 'addbooksuccess', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/addBook', 'parama': {'bookValues': '{"id": "660", "name": "2", "author": "2", "year": "222", "digest": "222" } '}, 'hope_result': {'errorNo': '0', 'success': True, 'errorInfo': ''}, 'actual_result': ['errorNo:0', 'success:True', 'errorInfo:'], 'test_result': 'PASS'}
+2018-04-04 21:39:03,943-'test'-INFO-当前执行用例：case2____用例执行时间：0.04000115394592285s
+2018-04-04 21:39:03,943-'test'-INFO-now test case3
+2018-04-04 21:39:03,963-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/addBook
+2018-04-04 21:39:03,963-'test'-INFO-now test post {'bookValues': '{ "id": "660", "name": "2", "author": "2", "year": "222","digest": "222"}'}
+2018-04-04 21:39:03,963-'test'-INFO-{'errorNo': '1', 'success': False, 'errorInfo': '该id已存在。'}
+2018-04-04 21:39:03,963-'test'-INFO-testreport is:{'case_id': '1-003', 't_name': 'addbookfail', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/addBook', 'parama': {'bookValues': '{ "id": "660", "name": "2", "author": "2", "year": "222","digest": "222"}'}, 'hope_result': {'errorNo': '1', 'success': False, 'errorInfo': '该id已存在。'}, 'actual_result': ['errorNo:1', 'success:False', 'errorInfo:该id已存在。'], 'test_result': 'PASS'}
+2018-04-04 21:39:03,963-'test'-INFO-当前执行用例：case3____用例执行时间：0.020015239715576172s
+2018-04-04 21:39:03,963-'test'-INFO-now test case4
+2018-04-04 21:39:03,973-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/updateBook
+2018-04-04 21:39:03,973-'test'-INFO-now test post {'bookValues': '{"id": "660", "name": "200000", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:03,973-'test'-INFO-{'errorNo': '0', 'success': True, 'errorInfo': '更新成功'}
+2018-04-04 21:39:03,983-'test'-INFO-testreport is:{'case_id': '1-004', 't_name': 'updatesuccess', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/updateBook', 'parama': {'bookValues': '{"id": "660", "name": "200000", "author": "2", "year": "222", "digest": "222" } '}, 'hope_result': {'errorNo': '0', 'success': True, 'errorInfo': '更新成功'}, 'actual_result': ['errorNo:0', 'success:True', 'errorInfo:更新成功'], 'test_result': 'PASS'}
+2018-04-04 21:39:03,983-'test'-INFO-当前执行用例：case4____用例执行时间：0.020003795623779297s
+2018-04-04 21:39:03,983-'test'-INFO-now test case5
+2018-04-04 21:39:03,993-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/updateBook
+2018-04-04 21:39:03,993-'test'-INFO-now test post {'bookValues': '{"id": "788", "name": "2", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:03,993-'test'-INFO-{'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}
+2018-04-04 21:39:03,993-'test'-INFO-testreport is:{'case_id': '1-005', 't_name': 'updatefail', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/updateBook', 'parama': {'bookValues': '{"id": "788", "name": "2", "author": "2", "year": "222", "digest": "222" } '}, 'hope_result': {'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}, 'actual_result': ['errorNo:1', 'success:False', 'errorInfo:该id不存在。'], 'test_result': 'PASS'}
+2018-04-04 21:39:04,003-'test'-INFO-当前执行用例：case5____用例执行时间：0.019979476928710938s
+2018-04-04 21:39:04,003-'test'-INFO-now test case6
+2018-04-04 21:39:04,013-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/deleteBook
+2018-04-04 21:39:04,013-'test'-INFO-now test post {'idString': '{"id":"660"}'}
+2018-04-04 21:39:04,013-'test'-INFO-{'errorNo': '0', 'success': True, 'errorInfo': '删除成功'}
+2018-04-04 21:39:04,013-'test'-INFO-testreport is:{'case_id': '1-006', 't_name': 'deletesuccess', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/deleteBook', 'parama': {'idString': '{"id":"660"}'}, 'hope_result': {'errorNo': '0', 'success': True, 'errorInfo': '删除成功'}, 'actual_result': ['errorNo:0', 'success:True', 'errorInfo:删除成功'], 'test_result': 'PASS'}
+2018-04-04 21:39:04,013-'test'-INFO-当前执行用例：case6____用例执行时间：0.010034322738647461s
+2018-04-04 21:39:04,023-'test'-INFO-now test case7
+2018-04-04 21:39:04,033-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/deleteBook
+2018-04-04 21:39:04,033-'test'-INFO-now test post {'idString': '{"id":"800"}'}
+2018-04-04 21:39:04,033-'test'-INFO-{'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}
+2018-04-04 21:39:04,033-'test'-INFO-testreport is:{'case_id': '1-007', 't_name': 'deletefail', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/deleteBook', 'parama': {'idString': '{"id":"800"}'}, 'hope_result': {'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}, 'actual_result': ['errorNo:1', 'success:False', 'errorInfo:该id不存在。'], 'test_result': 'PASS'}
+2018-04-04 21:39:04,033-'test'-INFO-当前执行用例：case7____用例执行时间：0.010020017623901367s
+2018-04-04 21:39:04,033-'excel'-INFO-testreport[j][key1]1-002
+2018-04-04 21:39:04,033-'excel'-INFO-testreport[j][key1]addbooksuccess
+2018-04-04 21:39:04,043-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:04,043-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/addBook
+2018-04-04 21:39:04,043-'excel'-INFO-testreport[j][key1]{'bookValues': '{"id": "660", "name": "2", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:04,043-'excel'-INFO-testreport[j][key1]{'errorNo': '0', 'success': True, 'errorInfo': ''}
+2018-04-04 21:39:04,043-'excel'-INFO-testreport[j][key1]['errorNo:0', 'success:True', 'errorInfo:']
+2018-04-04 21:39:04,043-'excel'-INFO-testreport[j][key1]PASS
+2018-04-04 21:39:04,043-'excel'-INFO-testreport[j][key1]1-003
+2018-04-04 21:39:04,043-'excel'-INFO-testreport[j][key1]addbookfail
+2018-04-04 21:39:04,053-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:04,053-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/addBook
+2018-04-04 21:39:04,053-'excel'-INFO-testreport[j][key1]{'bookValues': '{ "id": "660", "name": "2", "author": "2", "year": "222","digest": "222"}'}
+2018-04-04 21:39:04,053-'excel'-INFO-testreport[j][key1]{'errorNo': '1', 'success': False, 'errorInfo': '该id已存在。'}
+2018-04-04 21:39:04,053-'excel'-INFO-testreport[j][key1]['errorNo:1', 'success:False', 'errorInfo:该id已存在。']
+2018-04-04 21:39:04,053-'excel'-INFO-testreport[j][key1]PASS
+2018-04-04 21:39:04,053-'excel'-INFO-testreport[j][key1]1-004
+2018-04-04 21:39:04,053-'excel'-INFO-testreport[j][key1]updatesuccess
+2018-04-04 21:39:04,053-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:04,053-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/updateBook
+2018-04-04 21:39:04,053-'excel'-INFO-testreport[j][key1]{'bookValues': '{"id": "660", "name": "200000", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:04,063-'excel'-INFO-testreport[j][key1]{'errorNo': '0', 'success': True, 'errorInfo': '更新成功'}
+2018-04-04 21:39:04,063-'excel'-INFO-testreport[j][key1]['errorNo:0', 'success:True', 'errorInfo:更新成功']
+2018-04-04 21:39:04,063-'excel'-INFO-testreport[j][key1]PASS
+2018-04-04 21:39:04,063-'excel'-INFO-testreport[j][key1]1-005
+2018-04-04 21:39:04,063-'excel'-INFO-testreport[j][key1]updatefail
+2018-04-04 21:39:04,063-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:04,063-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/updateBook
+2018-04-04 21:39:04,063-'excel'-INFO-testreport[j][key1]{'bookValues': '{"id": "788", "name": "2", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]{'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]['errorNo:1', 'success:False', 'errorInfo:该id不存在。']
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]PASS
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]1-006
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]deletesuccess
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/deleteBook
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]{'idString': '{"id":"660"}'}
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]{'errorNo': '0', 'success': True, 'errorInfo': '删除成功'}
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]['errorNo:0', 'success:True', 'errorInfo:删除成功']
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]PASS
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]1-007
+2018-04-04 21:39:04,073-'excel'-INFO-testreport[j][key1]deletefail
+2018-04-04 21:39:04,083-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:04,083-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/deleteBook
+2018-04-04 21:39:04,083-'excel'-INFO-testreport[j][key1]{'idString': '{"id":"800"}'}
+2018-04-04 21:39:04,083-'excel'-INFO-testreport[j][key1]{'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}
+2018-04-04 21:39:04,083-'excel'-INFO-testreport[j][key1]['errorNo:1', 'success:False', 'errorInfo:该id不存在。']
+2018-04-04 21:39:04,083-'excel'-INFO-testreport[j][key1]PASS
+2018-04-04 21:39:32,773-'test'-INFO-now test case1
+2018-04-04 21:39:32,793-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/getBookList
+2018-04-04 21:39:32,793-'test'-INFO-now test post {'_dc': '1522767236167'}
+2018-04-04 21:39:32,793-'test'-INFO-{'root': [{'year': 2013, 'author': '赵卓', 'digest': 'Selenium是ThoughtWorks公司开发的Web自动化测试工具。Selenium可以直接在浏览器中运行，支持Windows、Linux和Macintosh平台上的Internet Explorer、Mozilla和Firefox等浏览器，得到了广大Web开发和测试人员的应用。 ', 'name': 'Selenium自动化测试指南', 'id': 5}, {'year': 2016, 'author': '詹姆斯·特恩布尔（James Turnbull）', 'digest': 'Docker是一个开源的应用容器引擎，开发者可以利用Docker打包自己的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化。', 'name': '第一本Docker书 修订版', 'id': 4}, {'year': 2011, 'author': '许晓斌', 'digest': '本书是国内第一本公开出版的Maven专著。它内容新颖，基于*发布的Maven 3.0，不仅详尽讲解了Maven 3.0的所有新功能和新特性。', 'name': 'Maven实战', 'id': 3}, {'year': 2016, 'author': 'Craig Walls 沃尔斯', 'digest': '《Spring实战（第4版）》是经典的、畅销的Spring学习和实践指南。 第4版针对Spring 4进行了全面更新。', 'name': 'Spring实战（第4版）', 'id': 2}, {'year': 2016, 'author': '汪云飞', 'digest': '在当今Java EE 开发中，Spring 框架是当之无愧的王者。而Spring Boot 是Spring 主推的基于“习惯优于配置”的原则，让你能够快速搭建应用的框架，从而使得Java EE 开发变得异常简单。', 'name': 'JavaEE开发的颠覆者: Spring Boot实战', 'id': 1}], 'totalProperty': 5}
+2018-04-04 21:39:32,793-'test'-INFO-testreport is:{'case_id': '1-001', 't_name': 'getbooklistsuccess', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/getBookList', 'parama': {'_dc': '1522767236167'}, 'hope_result': {'totalProperty': 5}, 'actual_result': ['totalProperty:5'], 'test_result': 'PASS'}
+2018-04-04 21:39:32,793-'test'-INFO-当前执行用例：case1____用例执行时间：0.01999950408935547s
+2018-04-04 21:39:32,793-'test'-INFO-now test case2
+2018-04-04 21:39:32,803-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/addBook
+2018-04-04 21:39:32,803-'test'-INFO-now test post {'bookValues': '{"id": "660", "name": "2", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:32,803-'test'-INFO-{'errorNo': '0', 'success': True, 'errorInfo': ''}
+2018-04-04 21:39:32,803-'test'-INFO-testreport is:{'case_id': '1-002', 't_name': 'addbooksuccess', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/addBook', 'parama': {'bookValues': '{"id": "660", "name": "2", "author": "2", "year": "222", "digest": "222" } '}, 'hope_result': {'errorNo': '0', 'success': True, 'errorInfo': ''}, 'actual_result': ['errorNo:0', 'success:True', 'errorInfo:'], 'test_result': 'PASS'}
+2018-04-04 21:39:32,803-'test'-INFO-当前执行用例：case2____用例执行时间：0.010000228881835938s
+2018-04-04 21:39:32,803-'test'-INFO-now test case3
+2018-04-04 21:39:32,813-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/addBook
+2018-04-04 21:39:32,813-'test'-INFO-now test post {'bookValues': '{ "id": "660", "name": "2", "author": "2", "year": "222","digest": "222"}'}
+2018-04-04 21:39:32,813-'test'-INFO-{'errorNo': '1', 'success': False, 'errorInfo': '该id已存在。'}
+2018-04-04 21:39:32,813-'test'-INFO-testreport is:{'case_id': '1-003', 't_name': 'addbookfail', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/addBook', 'parama': {'bookValues': '{ "id": "660", "name": "2", "author": "2", "year": "222","digest": "222"}'}, 'hope_result': {'errorNo': '1', 'success': False, 'errorInfo': '该id已存在。'}, 'actual_result': ['errorNo:1', 'success:False', 'errorInfo:该id已存在。'], 'test_result': 'PASS'}
+2018-04-04 21:39:32,813-'test'-INFO-当前执行用例：case3____用例执行时间：0.010000228881835938s
+2018-04-04 21:39:32,813-'test'-INFO-now test case4
+2018-04-04 21:39:32,823-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/updateBook
+2018-04-04 21:39:32,823-'test'-INFO-now test post {'bookValues': '{"id": "660", "name": "200000", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:32,823-'test'-INFO-{'errorNo': '0', 'success': True, 'errorInfo': '更新成功'}
+2018-04-04 21:39:32,823-'test'-INFO-testreport is:{'case_id': '1-004', 't_name': 'updatesuccess', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/updateBook', 'parama': {'bookValues': '{"id": "660", "name": "200000", "author": "2", "year": "222", "digest": "222" } '}, 'hope_result': {'errorNo': '0', 'success': True, 'errorInfo': '更新成功'}, 'actual_result': ['errorNo:0', 'success:True', 'errorInfo:更新成功'], 'test_result': 'PASS'}
+2018-04-04 21:39:32,833-'test'-INFO-当前执行用例：case4____用例执行时间：0.020000934600830078s
+2018-04-04 21:39:32,833-'test'-INFO-now test case5
+2018-04-04 21:39:32,833-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/updateBook
+2018-04-04 21:39:32,833-'test'-INFO-now test post {'bookValues': '{"id": "788", "name": "2", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:32,833-'test'-INFO-{'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}
+2018-04-04 21:39:32,843-'test'-INFO-testreport is:{'case_id': '1-005', 't_name': 'updatefail', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/updateBook', 'parama': {'bookValues': '{"id": "788", "name": "2", "author": "2", "year": "222", "digest": "222" } '}, 'hope_result': {'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}, 'actual_result': ['errorNo:1', 'success:False', 'errorInfo:该id不存在。'], 'test_result': 'PASS'}
+2018-04-04 21:39:32,843-'test'-INFO-当前执行用例：case5____用例执行时间：0.00999903678894043s
+2018-04-04 21:39:32,843-'test'-INFO-now test case6
+2018-04-04 21:39:32,853-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/deleteBook
+2018-04-04 21:39:32,853-'test'-INFO-now test post {'idString': '{"id":"660"}'}
+2018-04-04 21:39:32,853-'test'-INFO-{'errorNo': '0', 'success': True, 'errorInfo': '删除成功'}
+2018-04-04 21:39:32,853-'test'-INFO-testreport is:{'case_id': '1-006', 't_name': 'deletesuccess', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/deleteBook', 'parama': {'idString': '{"id":"660"}'}, 'hope_result': {'errorNo': '0', 'success': True, 'errorInfo': '删除成功'}, 'actual_result': ['errorNo:0', 'success:True', 'errorInfo:删除成功'], 'test_result': 'PASS'}
+2018-04-04 21:39:32,853-'test'-INFO-当前执行用例：case6____用例执行时间：0.010001182556152344s
+2018-04-04 21:39:32,853-'test'-INFO-now test case7
+2018-04-04 21:39:32,863-'test'-INFO-now test post url is http://127.0.0.1:8080/test/book/deleteBook
+2018-04-04 21:39:32,863-'test'-INFO-now test post {'idString': '{"id":"800"}'}
+2018-04-04 21:39:32,863-'test'-INFO-{'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}
+2018-04-04 21:39:32,873-'test'-INFO-testreport is:{'case_id': '1-007', 't_name': 'deletefail', 'methord': 'post', 'url': 'http://127.0.0.1:8080/test/book/deleteBook', 'parama': {'idString': '{"id":"800"}'}, 'hope_result': {'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}, 'actual_result': ['errorNo:1', 'success:False', 'errorInfo:该id不存在。'], 'test_result': 'PASS'}
+2018-04-04 21:39:32,873-'test'-INFO-当前执行用例：case7____用例执行时间：0.019999027252197266s
+2018-04-04 21:39:32,873-'excel'-INFO-testreport[j][key1]1-002
+2018-04-04 21:39:32,873-'excel'-INFO-testreport[j][key1]addbooksuccess
+2018-04-04 21:39:32,873-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:32,873-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/addBook
+2018-04-04 21:39:32,873-'excel'-INFO-testreport[j][key1]{'bookValues': '{"id": "660", "name": "2", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:32,873-'excel'-INFO-testreport[j][key1]{'errorNo': '0', 'success': True, 'errorInfo': ''}
+2018-04-04 21:39:32,873-'excel'-INFO-testreport[j][key1]['errorNo:0', 'success:True', 'errorInfo:']
+2018-04-04 21:39:32,873-'excel'-INFO-testreport[j][key1]PASS
+2018-04-04 21:39:32,873-'excel'-INFO-testreport[j][key1]1-003
+2018-04-04 21:39:32,873-'excel'-INFO-testreport[j][key1]addbookfail
+2018-04-04 21:39:32,883-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:32,883-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/addBook
+2018-04-04 21:39:32,883-'excel'-INFO-testreport[j][key1]{'bookValues': '{ "id": "660", "name": "2", "author": "2", "year": "222","digest": "222"}'}
+2018-04-04 21:39:32,883-'excel'-INFO-testreport[j][key1]{'errorNo': '1', 'success': False, 'errorInfo': '该id已存在。'}
+2018-04-04 21:39:32,883-'excel'-INFO-testreport[j][key1]['errorNo:1', 'success:False', 'errorInfo:该id已存在。']
+2018-04-04 21:39:32,883-'excel'-INFO-testreport[j][key1]PASS
+2018-04-04 21:39:32,883-'excel'-INFO-testreport[j][key1]1-004
+2018-04-04 21:39:32,883-'excel'-INFO-testreport[j][key1]updatesuccess
+2018-04-04 21:39:32,883-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/updateBook
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]{'bookValues': '{"id": "660", "name": "200000", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]{'errorNo': '0', 'success': True, 'errorInfo': '更新成功'}
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]['errorNo:0', 'success:True', 'errorInfo:更新成功']
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]PASS
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]1-005
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]updatefail
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/updateBook
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]{'bookValues': '{"id": "788", "name": "2", "author": "2", "year": "222", "digest": "222" } '}
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]{'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}
+2018-04-04 21:39:32,893-'excel'-INFO-testreport[j][key1]['errorNo:1', 'success:False', 'errorInfo:该id不存在。']
+2018-04-04 21:39:32,903-'excel'-INFO-testreport[j][key1]PASS
+2018-04-04 21:39:32,903-'excel'-INFO-testreport[j][key1]1-006
+2018-04-04 21:39:32,903-'excel'-INFO-testreport[j][key1]deletesuccess
+2018-04-04 21:39:32,903-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:32,903-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/deleteBook
+2018-04-04 21:39:32,903-'excel'-INFO-testreport[j][key1]{'idString': '{"id":"660"}'}
+2018-04-04 21:39:32,903-'excel'-INFO-testreport[j][key1]{'errorNo': '0', 'success': True, 'errorInfo': '删除成功'}
+2018-04-04 21:39:32,903-'excel'-INFO-testreport[j][key1]['errorNo:0', 'success:True', 'errorInfo:删除成功']
+2018-04-04 21:39:32,913-'excel'-INFO-testreport[j][key1]PASS
+2018-04-04 21:39:32,913-'excel'-INFO-testreport[j][key1]1-007
+2018-04-04 21:39:32,913-'excel'-INFO-testreport[j][key1]deletefail
+2018-04-04 21:39:32,913-'excel'-INFO-testreport[j][key1]post
+2018-04-04 21:39:32,913-'excel'-INFO-testreport[j][key1]http://127.0.0.1:8080/test/book/deleteBook
+2018-04-04 21:39:32,913-'excel'-INFO-testreport[j][key1]{'idString': '{"id":"800"}'}
+2018-04-04 21:39:32,913-'excel'-INFO-testreport[j][key1]{'errorNo': '1', 'success': False, 'errorInfo': '该id不存在。'}
+2018-04-04 21:39:32,913-'excel'-INFO-testreport[j][key1]['errorNo:1', 'success:False', 'errorInfo:该id不存在。']
+2018-04-04 21:39:32,913-'excel'-INFO-testreport[j][key1]PASS
